@@ -6,8 +6,7 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var arrays = []
 
 // Insert prompt & confirms
-// if statement for 8/128
-// make sure at least one confirm is true
+// If/else statement for length
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -23,6 +22,16 @@ function writePassword() {
   else if (passwordLength > 128) {
     alert('Your password cannot exceed 128 characters.')
   }
+
+  var specialChars = confirm('Would you like to include special characters?');
+
+  var numbers = confirm('Would you like to include numbers?');
+
+  var lowCase = confirm('Would you like to include lower case letters?');
+
+  var uppCase = confirm('Would you like to include upper case letters?');
+
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
