@@ -3,7 +3,7 @@ var char = ["!","@","#","$","%","^","&","*","(",")","-","+","_","=","{","}","[",
 var nums = ["1","2","3","4","5","6","7","8","9","0"];
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-var arrays = []
+var emptyArray = []
 
 // Insert prompt & confirms
 // If/else statement for length
@@ -30,6 +30,28 @@ function writePassword() {
   var lowCase = confirm('Would you like to include lower case letters?');
 
   var uppCase = confirm('Would you like to include upper case letters?');
+
+  // Push syms, nums, letters into empty array when confirmed in prompt
+
+  if (specialChars === true) {
+    emptyArray.push(char);
+   
+  }
+  
+  if (numbers === true) {
+    emptyArray.push(nums);
+    
+  }
+
+  if (lowCase === true) {
+    emptyArray.push(lowerCase);
+    
+  }
+
+  if (uppCase === true) {
+    emptyArray.push(upperCase);
+  
+  }
 
 
 
