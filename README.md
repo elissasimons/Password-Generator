@@ -4,6 +4,8 @@
 
 This deployed application is a randomized password generator. When you click the "generate" button, you should be prompted by several questions that help you create a unique password.
 
+Deployed Link: https://elissasimons.github.io/Password-Generator/
+
 ## Built With
 
 * Javascript (https://www.javascript.com/)
